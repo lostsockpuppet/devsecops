@@ -1,9 +1,9 @@
-output "bucket_name" {
-  description = "Name of the S3 bucket created by Terraform"
-  value       = aws_s3_bucket.demo.bucket
+output "project_name" {
+  description = "Project name for this Terraform workflow"
+  value       = local.project_name
 }
 
-output "bucket_arn" {
-  description = "ARN of the S3 bucket created by Terraform"
-  value       = aws_s3_bucket.demo.arn
+output "environment" {
+  description = "Environment name for this Terraform workflow"
+  value       = local.environment
 }
